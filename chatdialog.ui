@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChatDialog</class>
+ <widget class="QWidget" name="ChatDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>925</width>
+    <height>786</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTextEdit" name="messageBox_textEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>561</width>
+     <height>401</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="messageEdit_textEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>570</y>
+     <width>561</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="send_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>710</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>710</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>540</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>消息记录</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>540</y>
+     <width>71</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>字体</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="advertisement_label">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>70</y>
+     <width>251</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;这里是广告&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;【你还没有长者秀，赶快来免费领取】&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nickname_label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>对方的昵称</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sign_label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>50</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>对方的签名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="picture_labal">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>72</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>对方的头像</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>540</y>
+     <width>561</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>textEdit</zorder>
+  <zorder>messageBox_textEdit</zorder>
+  <zorder>send_pushButton</zorder>
+  <zorder>close_pushButton</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>advertisement_label</zorder>
+  <zorder>nickname_label</zorder>
+  <zorder>sign_label</zorder>
+  <zorder>picture_labal</zorder>
+  <zorder>messageEdit_textEdit</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
