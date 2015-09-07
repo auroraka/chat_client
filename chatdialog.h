@@ -2,8 +2,8 @@
 #define CHATDIALOG_H
 
 #include <QWidget>
-#include <vector>
-using std::vector;
+#include <map>
+using std::map;
 
 namespace Ui {
 class ChatDialog;
@@ -19,7 +19,6 @@ public:
     void myUpdate();
     void addNewTalkInfo(QString info);
 
-    int talkingID;
     QString nickname,sign,account;
 
 private slots:
@@ -29,6 +28,5 @@ private:
     Ui::ChatDialog *ui;
 };
 
-extern vector<ChatDialog*> chatDialogList;
 
 #endif // CHATDIALOG_H

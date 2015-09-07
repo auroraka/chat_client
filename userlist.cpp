@@ -55,22 +55,22 @@ void UserList::newChat(QListWidgetItem *item){
 
 
 void UserList::talkTo(QString account,QString info){
-    qDebug()<<"creat talk";
-    int now=findUser(account);
-    if (now==-1){
-        UserInfo user;
-        user.account=account;
-        talkingList.push_back(user);
-        tcp->sendInfo("require_talking_userInfo",account);
-        ChatDialog *newchat = new ChatDialog;
-        chatDialogList.push_back(newchat);
-        newchat->talkingID=chatDialogList.size()-1;
-        newchat->addNewTalkInfo(info);
-        newchat->myUpdate();
-        newchat->show();
-    }else{
-        chatDialogList[now]->myUpdate();
-        chatDialogList[now]->show();
-    }
-    qDebug()<<"tot userList: "<<talkingList.size();
+//    qDebug()<<"creat talk";
+//    int now=findUser(account);
+//    if (now==-1){
+//        UserInfo user;
+//        user.account=account;
+//        userL.push_back(user);
+//        tcp->sendInfo("require_talking_userInfo",account);
+//        ChatDialog *newchat = new ChatDialog;
+//        chatDialogList.push_back(newchat);
+//        newchat->talkingID=chatDialogList.size()-1;
+//        newchat->addNewTalkInfo(info);
+//        newchat->myUpdate();
+//        newchat->show();
+//    }else{
+//        chatDialogList[now]->myUpdate();
+//        chatDialogList[now]->show();
+//    }
+//    qDebug()<<"tot userList: "<<userL.size();
 }

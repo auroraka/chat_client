@@ -14,9 +14,8 @@ UserList *userList;
 LoginWindow *loginWindow;
 Tcp *tcp;
 UserInfo *myuser;
-vector<UserInfo>  talkingList;
+vector<UserInfo>  userL;
 vector<LinkMan> linkMan;
-map<QString,ChatDialog*> chatDialogList;
 
 int main(int argc, char *argv[])
 {

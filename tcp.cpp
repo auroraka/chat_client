@@ -183,18 +183,28 @@ void Tcp::dealInfo(QString info){
         stream>>account,info;
         userList->talkTo(account,encodeStr(info));
     }else if (head=="talking_info"){
+//        QString account,nickname,sign;
+//        stream>>account>>nickname>>sign;
+//        int now=findUser(account);
+//        if (now!=-1){
+//            userL[now].nickname=nickname;
+//            userL[now].sign=sign;
+//            for (int i=0;i<chatDialogList.size();i++){
+//                if (userL[chatDialogList[i]->talkingID].account==account){
+//                    chatDialogList[id]->myUpdate();
+//                }
+//            }
+//        }
+    }else if (head=="newchat_request"){
         QString account,nickname,sign;
-        stream>>account>>nickname>>sign;
-        int now=findUser(account);
-        if (now!=-1){
-            talkingList[now].nickname=nickname;
-            talkingList[now].sign=sign;
-            for (int i=0;i<chatDialogList.size();i++){
-                if (chatDialogList[i]->talkingID){
-                    chatDialogList[i]->myUpdate();
-                }
-            }
-        }
+        stream>>account>>nickname,sign;
+        ChatDialog *newchat = new ChatDialog;
+        newchat->nickname=nickname;
+        newchat->sign=sign;
+        newchat->account=account;
+        newchat->myUpdate();
+        newchat->show();
+
     }
 }
 

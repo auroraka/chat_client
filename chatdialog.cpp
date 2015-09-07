@@ -19,9 +19,6 @@ ChatDialog::~ChatDialog()
 }
 
 void ChatDialog::myUpdate(){
-    nickname=talkingList[talkingID].nickname;
-    sign=talkingList[talkingID].sign;
-    account=talkingList[talkingID].account;
     setWindowTitle(nickname);
     ui->nickname_label->setText(nickname);
     ui->sign_label->setText(sign);

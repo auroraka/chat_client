@@ -17,9 +17,9 @@ public:
 };
 
 extern UserInfo  *myuser;
-extern vector<UserInfo> talkingList;
+//extern vector<UserInfo> talkingInfoList;
 
-int findUser(QString account);
+//int findUser(QString account);
 
 
 
